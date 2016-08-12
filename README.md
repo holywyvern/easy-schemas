@@ -1,9 +1,24 @@
 # easy-schemas
 A Node.js Schema package to validate items easily.
 
+### Installing
+
+```
+npm install --save easy-schemas
+```
+
 ## How to use?
 
-### First you need to create an schema:
+### First you need to import this package:
+
+```js
+  // ES5
+  const Schema = require('easy-schemas');
+  // ES6
+  import Schema from 'easy-schemas';
+```
+
+### Then you need to create an schema:
 
 ```js
   let Point = { x: Number, y: Number };
