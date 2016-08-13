@@ -21,11 +21,11 @@ npm install --save easy-schemas
 ### Then you need to create an schema:
 
 ```js
-  let Point = { x: Number, y: Number };
+  let Point = new Schema({ x: Number, y: Number });
   // it could also be:
-  let Point = { x: { type: Number }, y: { type: Number } };
+  let Point = new Schema({ x: { type: Number }, y: { type: Number } });
   // or:
-  let Point = { x: { type: 'number' }, y: 'number' };
+  let Point = new Schema({ x: { type: 'number' }, y: 'number' });
 ```
 
 ### After that you just validate it:
